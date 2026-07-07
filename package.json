@@ -12,11 +12,9 @@
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.2.10",
     "@fontsource/inter": "^5.2.8",
-    "@fontsource/sora": "^5.2.8",
     "astro": "^5.12.0"
   },
   "devDependencies": {
-    "@tabler/icons": "^3.44.0",
     "sharp": "^0.33.5"
   }
 }

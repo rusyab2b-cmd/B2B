@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import Icon from '../components/Icon.astro';
 ---
 
 <BaseLayout
@@ -13,13 +12,12 @@ import Icon from '../components/Icon.astro';
   <main>
     <section class="wrap thanks" id="icerik">
       <div class="thanks-card reveal in">
-        <span class="badge-ok"><Icon name="check" /></span>
         <h1>Talebiniz alındı</h1>
         <p>
           Teşekkürler! Ekibimiz talebinizi inceleyip <strong>24 saat içinde</strong> sektörünüze özel
           bir ön değerlendirmeyle size dönüş yapacak.
         </p>
-        <a href="/" class="btn btn-p">Ana sayfaya dön</a>
+        <a href="/" class="btn">Ana sayfaya dön</a>
       </div>
     </section>
   </main>
