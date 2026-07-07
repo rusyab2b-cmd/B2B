@@ -1,0 +1,89 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="wrap" id="paket">
+  <div class="shead reveal">
+    <h2>İhtiyacınıza göre paketler</h2>
+    <p class="ssub">Sadece pazar analizinden, uçtan uca görüşme organizasyonuna kadar.</p>
+  </div>
+  <div class="pkgs stagger reveal">
+    <div class="pkg">
+      <div class="pname">Keşif</div>
+      <div class="pprice">Pazar analizi</div>
+      <div class="pdiv"></div>
+      <div class="pf"><Icon name="check" />Sektör pazar raporu</div>
+      <div class="pf"><Icon name="check" />Rakip &amp; kanal analizi</div>
+      <div class="pf"><Icon name="check" />Giriş &amp; sertifika notları</div>
+      <a href="#iletisim" class="btn btn-o pcta">İncele</a>
+    </div>
+    <div class="pkg feat">
+      <span class="pbadge">En çok tercih edilen</span>
+      <div class="pname">Büyüme</div>
+      <div class="pprice">Analiz + görüşme</div>
+      <div class="pdiv"></div>
+      <div class="pf"><Icon name="check" />Keşif paketinin tümü</div>
+      <div class="pf"><Icon name="check" />Potansiyel firma listesi</div>
+      <div class="pf"><Icon name="check" />Görüşme organizasyonu</div>
+      <div class="pf"><Icon name="check" />3 gün Rusya programı</div>
+      <a href="#iletisim" class="btn btn-p pcta">Görüşme al</a>
+    </div>
+    <div class="pkg">
+      <div class="pname">Kurumsal</div>
+      <div class="pprice">Uçtan uca</div>
+      <div class="pdiv"></div>
+      <div class="pf"><Icon name="check" />Büyüme paketinin tümü</div>
+      <div class="pf"><Icon name="check" />Çoklu şehir programı</div>
+      <div class="pf"><Icon name="check" />Sürekli veri &amp; takip</div>
+      <a href="#iletisim" class="btn btn-o pcta">İncele</a>
+    </div>
+  </div>
+  <div class="cmp reveal">
+    <table>
+      <caption style="position:absolute;left:-9999px">Paket karşılaştırma tablosu</caption>
+      <thead>
+        <tr>
+          <th scope="col">Neler dahil</th><th scope="col">Keşif</th><th scope="col" class="hl">Büyüme</th><th scope="col">Kurumsal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sektör pazar raporu</td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+        </tr>
+        <tr>
+          <td>Rakip &amp; kanal analizi</td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+        </tr>
+        <tr>
+          <td>Potansiyel firma listesi</td>
+          <td><Icon name="minus" class="no" label="Dahil değil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+        </tr>
+        <tr>
+          <td>Görüşme organizasyonu</td>
+          <td><Icon name="minus" class="no" label="Dahil değil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+        </tr>
+        <tr>
+          <td>Rusya'da program</td>
+          <td><Icon name="minus" class="no" label="Dahil değil" /></td>
+          <td>3 gün</td>
+          <td>Çoklu şehir</td>
+        </tr>
+        <tr>
+          <td>Sürekli veri &amp; takip</td>
+          <td><Icon name="minus" class="no" label="Dahil değil" /></td>
+          <td><Icon name="minus" class="no" label="Dahil değil" /></td>
+          <td><Icon name="check" class="yes" label="Dahil" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

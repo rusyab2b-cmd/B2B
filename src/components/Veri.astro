@@ -1,0 +1,83 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="wrap on-blue" id="veri">
+  <div class="shead reveal">
+    <h2>Elimizde biriken sektör verisi</h2>
+    <p class="ssub">
+      Her görüşmeden veri toplarız. Zamanla bu, alt sektör bazında canlı bir pazar hafızasına
+      dönüşür.
+    </p>
+  </div>
+  {/* v1: filtre görsel/statik (brief §3); gerçek filtreleme backend isteyen 2. faz işi */}
+  <div class="filt reveal">
+    <span class="filt-l">Filtrele:</span>
+    <span class="chip2">Sektör: Gıda ▾</span><span class="chip2">Ülke: Rusya ▾</span><span
+      class="chip2">Alt sektör: Kuru gıda ▾</span>
+  </div>
+  <div class="dgrid stagger reveal">
+    <div class="dc">
+      <span class="dlock"><Icon name="lock" label="Detay pakete dahil" /></span>
+      <div class="dct">Gıda · pazar büyüklüğü</div>
+      <div class="dbars" aria-hidden="true">
+        <span data-h="40"></span><span data-h="64"></span><span data-h="52"></span><span
+          data-h="82"></span><span data-h="70"></span>
+      </div>
+      <div class="dm">₽ 4,2 T</div>
+      <div class="dml">2026 · +9,4%</div>
+      <span class="dtag">pakete dahil</span>
+    </div>
+    <div class="dc">
+      <span class="dlock"><Icon name="lock" label="Detay pakete dahil" /></span>
+      <div class="dct">Tekstil · ithalat payı</div>
+      <div class="dbars" aria-hidden="true">
+        <span data-h="55"></span><span data-h="45"></span><span data-h="76"></span><span
+          data-h="60"></span><span data-h="90"></span>
+      </div>
+      <div class="dm">%18</div>
+      <div class="dml">Türkiye payı · 2026</div>
+      <span class="dtag">pakete dahil</span>
+    </div>
+    <div class="dc">
+      <span class="dlock"><Icon name="lock" label="Detay pakete dahil" /></span>
+      <div class="dct">Mobilya · büyüme</div>
+      <div class="dbars" aria-hidden="true">
+        <span data-h="70"></span><span data-h="50"></span><span data-h="85"></span><span
+          data-h="42"></span><span data-h="66"></span>
+      </div>
+      <div class="dm">+11%</div>
+      <div class="dml">yıllık · 2026</div>
+      <span class="dtag">pakete dahil</span>
+    </div>
+  </div>
+  <div class="scap reveal">Bir raporun içinde</div>
+  <div class="slayers stagger reveal">
+    <div class="slay">
+      <div class="n" aria-hidden="true">1</div>
+      <div class="t">Pazar tablosu</div>
+      <div class="d">Büyüklük, trend, segment</div>
+    </div>
+    <div class="slay">
+      <div class="n" aria-hidden="true">2</div>
+      <div class="t">Rakip &amp; kanal</div>
+      <div class="d">Tedarikçiler, alıcı tipleri</div>
+    </div>
+    <div class="slay">
+      <div class="n" aria-hidden="true">3</div>
+      <div class="t">Firma listesi</div>
+      <div class="d">Taranmış potansiyel alıcılar</div>
+    </div>
+    <div class="slay">
+      <div class="n" aria-hidden="true">4</div>
+      <div class="t">Görüşme hazırlığı</div>
+      <div class="d">MOQ, EAC, pazarlık notu</div>
+    </div>
+  </div>
+  <div class="badges reveal">
+    <span class="bdg"><Icon name="shield-check" />EAC sertifika desteği</span>
+    <span class="bdg"><Icon name="building-bank" />Rusya Ticaret Odası uyumlu</span>
+    <span class="bdg"><Icon name="map-pin" />Rusya'da yerel ekip</span>
+    <span class="bdg"><Icon name="users" />Doğrulanmış firmalar</span>
+  </div>
+</section>

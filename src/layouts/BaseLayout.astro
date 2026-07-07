@@ -1,0 +1,46 @@
+---
+// Fontlar self-hosted (@fontsource) — display=swap varsayılan, dış CDN yok.
+import '@fontsource/sora/400.css';
+import '@fontsource/sora/500.css';
+import '@fontsource/sora/600.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "RUSYA2B2 — Türkiye'den Rusya'ya B2B danışmanlık",
+  description = 'Sektörünüzü tanıyan bir ekip; pazar araştırması, rakip analizi ve doğru firmalarla görüşme organizasyonunu Rusya’da baştan sona sizin için yönetir.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <noscript>
+      <style>
+        .reveal,
+        .stagger > * {
+          opacity: 1;
+          transform: none;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <a class="skip-link" href="#icerik">İçeriğe atla</a>
+    <slot />
+    <script>
+      import '../scripts/animations.js';
+    </script>
+  </body>
+</html>

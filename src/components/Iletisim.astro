@@ -1,0 +1,102 @@
+<section class="contact-sec on-blue" id="iletisim">
+  <div class="contact-bg" aria-hidden="true">
+    <img
+      src="/images/iletisim-siluet.webp"
+      alt=""
+      width="1440"
+      height="900"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+  <div class="wrap">
+    <div class="shead reveal">
+      <h2>Rusya yolculuğunuzu bugün başlatın</h2>
+      <p class="ssub">Formu doldurun; 24 saat içinde sektörünüze özel bir ön değerlendirmeyle dönelim.</p>
+    </div>
+    <div class="contact reveal">
+      {/*
+        Netlify Forms: form adı "on-gorusme". Gönderimler Netlify panelinde
+        Forms > on-gorusme altında birikir; bildirim e-postası oradan ayarlanır
+        (README "Form bildirimleri" adımı — [DEĞİŞTİR: form-bildirimi@rusya2b2.com]).
+      */}
+      <form
+        class="cform"
+        name="on-gorusme"
+        method="POST"
+        action="/tesekkurler/"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="on-gorusme" />
+        <p class="hp" aria-hidden="true">
+          <label>Bu alanı boş bırakın: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <div class="frow">
+          <div class="fg">
+            <label for="f-ad">Ad Soyad</label>
+            <input id="f-ad" name="ad-soyad" type="text" placeholder="Adınız" required autocomplete="name" />
+          </div>
+          <div class="fg">
+            <label for="f-firma">Firma</label>
+            <input id="f-firma" name="firma" type="text" placeholder="Firma adı" autocomplete="organization" />
+          </div>
+        </div>
+        <div class="fg">
+          <label for="f-sektor">Sektör</label>
+          <select id="f-sektor" name="sektor" required>
+            <option value="" disabled selected>Sektörünüzü seçin</option>
+            <option>Gıda</option>
+            <option>Tekstil &amp; Hazır Giyim</option>
+            <option>İnşaat &amp; Yapı</option>
+            <option>Makine &amp; Metal</option>
+            <option>Kimya</option>
+            <option>Mobilya</option>
+          </select>
+        </div>
+        <div class="frow">
+          <div class="fg">
+            <label for="f-tel">Telefon</label>
+            <input id="f-tel" name="telefon" type="tel" placeholder="+90" autocomplete="tel" />
+          </div>
+          <div class="fg">
+            <label for="f-eposta">E-posta</label>
+            <input id="f-eposta" name="eposta" type="email" placeholder="ornek@firma.com" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="fg">
+          <label for="f-mesaj">Mesajınız</label>
+          <textarea
+            id="f-mesaj"
+            name="mesaj"
+            placeholder="Rusya'da hedeflediğiniz ürün ve pazar hakkında kısa not"></textarea>
+        </div>
+        <button type="submit" class="btn btn-p" style="width:auto">Ücretsiz ön görüşme al</button>
+      </form>
+      <div class="cside">
+        <h3>Bundan sonra</h3>
+        <div class="cstep">
+          <span class="n" aria-hidden="true">1</span>
+          <div>
+            <div class="t">24 saatte dönüş</div>
+            <div class="d">Talebinizi inceleyip sizi ararız.</div>
+          </div>
+        </div>
+        <div class="cstep">
+          <span class="n" aria-hidden="true">2</span>
+          <div>
+            <div class="t">Ön pazar analizi</div>
+            <div class="d">Sektörünüz için ilk değerlendirme.</div>
+          </div>
+        </div>
+        <div class="cstep">
+          <span class="n" aria-hidden="true">3</span>
+          <div>
+            <div class="t">Görüşme planı</div>
+            <div class="d">Rusya programınızı birlikte kurarız.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
