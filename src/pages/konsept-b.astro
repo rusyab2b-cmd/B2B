@@ -1,0 +1,712 @@
+---
+// KONSEPT B — "Mürekkep & Kehribar": koyu-premium / editoryal danışmanlık dili.
+// Onay için hazırlanan alternatif tasarım önizlemesi; index.astro'dan bağımsızdır.
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RUSYA2B2 — Rusya pazarına alan hakimiyetiyle girin (Konsept B)</title>
+    <meta
+      name="description"
+      content="Türk üretici ve ihracatçıları Rusya'daki doğru alıcılarla buluşturan B2B danışmanlık. Pazar araştırması, firma eşleştirme ve Rusya'da uçtan uca organizasyon."
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip" href="#icerik">İçeriğe geç</a>
+
+    <header>
+      <div class="wrap nav">
+        <a href="/konsept-b" class="logo" aria-label="RUSYA2B2 ana sayfa">RUSYA<b>2B2</b></a>
+        <nav class="links" aria-label="Ana menü">
+          <a href="#sektor">Sektörler</a><a href="#surec">Süreç</a><a href="#paket">Paketler</a><a
+            href="#veri">Veri</a>
+        </nav>
+        <span class="sp"></span>
+        <span class="lang" title="Rusça sürüm hazırlanıyor">TR / RU</span>
+        <a href="#iletisim" class="btn btn-p">Ücretsiz ön görüşme</a>
+      </div>
+    </header>
+
+    <main id="icerik">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap hgrid">
+          <div class="hcopy reveal in">
+            <p class="route">Türkiye <span aria-hidden="true">⟶</span> Rusya · B2B danışmanlık</p>
+            <h1>Rusya pazarına alan hakimiyetiyle girin</h1>
+            <p class="lead">
+              Sektörünüzü tanıyan bir ekip; pazar araştırması, rakip analizi ve doğru firmalarla
+              görüşme organizasyonunu Rusya'da baştan sona sizin için yönetir.
+            </p>
+            <div class="cta-row">
+              <a href="#iletisim" class="btn btn-p btn-l">Ücretsiz ön görüşme al</a>
+              <a href="#surec" class="tlink">Nasıl çalışıyor?</a>
+            </div>
+          </div>
+          <figure class="hmedia reveal in">
+            <img
+              src="/images/hero.webp"
+              alt="Türk ürünü ve Rus alıcı arasında iş görüşmesi (yer tutucu görsel)"
+              width="960"
+              height="816"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <figcaption>Moskova · alıcı görüşmesi</figcaption>
+          </figure>
+        </div>
+        <div class="wrap hstats reveal in" role="list">
+          <div role="listitem">
+            <span class="n">%9,4</span>
+            <span class="l">gıda pazarı yıllık büyümesi</span>
+          </div>
+          <div role="listitem">
+            <span class="n">400+</span>
+            <span class="l">taranmış potansiyel firma</span>
+          </div>
+          <div role="listitem">
+            <span class="n">3 gün</span>
+            <span class="l">hazır Rusya görüşme programı</span>
+          </div>
+          <div role="listitem">
+            <span class="n">12</span>
+            <span class="l">ana sektör, alt kırılımlarıyla</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- REFERANS ŞERİDİ -->
+      <section class="band">
+        <div class="wrap trust reveal">
+          <p class="cap">Sektörlerinde Rusya'ya açılan firmalar bu süreci bize emanet ediyor</p>
+          <ul class="logos">
+            <li><img src="/images/logo-1.webp" alt="Firma logosu" width="132" height="52" loading="lazy" decoding="async" /></li>
+            <li><img src="/images/logo-2.webp" alt="Firma logosu" width="132" height="52" loading="lazy" decoding="async" /></li>
+            <li><img src="/images/logo-ticaret-odasi.webp" alt="Ticaret Odası rozeti" width="132" height="52" loading="lazy" decoding="async" /></li>
+            <li><img src="/images/logo-eac.webp" alt="EAC sertifika rozeti" width="132" height="52" loading="lazy" decoding="async" /></li>
+            <li><img src="/images/logo-3.webp" alt="Firma logosu" width="132" height="52" loading="lazy" decoding="async" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEKTÖR ENDEKSİ -->
+      <section class="wrap sec" id="sektor">
+        <div class="shead reveal">
+          <h2>Sektörünüzü seçin, size özel yol haritasını görün</h2>
+          <p class="ssub">
+            Ana sektörden alt kırılıma kadar iniyoruz — çünkü "gıda" demek yetmez, "kuru gıda
+            ihracatı" ayrı bir oyundur.
+          </p>
+        </div>
+        <ol class="sindex reveal">
+          <li class="srow open">
+            <div class="shd">
+              <span class="sno" aria-hidden="true">01</span>
+              <span class="snm">Gıda</span>
+              <span class="scnt">6 alt sektör</span>
+            </div>
+            <ul class="subs">
+              <li><b>Kuru gıda</b><span>Bakliyat, un, makarna</span></li>
+              <li><b>Atıştırmalık &amp; çerez</b><span>Kuruyemiş, cips, bar</span></li>
+              <li><b>İçecek</b><span>Meşrubat, çay, kahve</span></li>
+              <li><b>Konserve</b><span>Salça, turşu, hazır yemek</span></li>
+              <li><b>Şekerleme</b><span>Çikolata, lokum, bisküvi</span></li>
+              <li><b>Organik</b><span>Sertifikalı, doğal ürünler</span></li>
+            </ul>
+          </li>
+          <li class="srow">
+            <div class="shd">
+              <span class="sno" aria-hidden="true">02</span>
+              <span class="snm">Tekstil &amp; Hazır Giyim</span>
+              <span class="scnt">5 alt sektör</span>
+            </div>
+          </li>
+          <li class="srow">
+            <div class="shd">
+              <span class="sno" aria-hidden="true">03</span>
+              <span class="snm">İnşaat &amp; Yapı</span>
+              <span class="scnt">4 alt sektör</span>
+            </div>
+          </li>
+          <li class="srow">
+            <div class="shd">
+              <span class="sno" aria-hidden="true">04</span>
+              <span class="snm">Makine &amp; Metal</span>
+              <span class="scnt">5 alt sektör</span>
+            </div>
+          </li>
+          <li class="srow">
+            <div class="shd">
+              <span class="sno" aria-hidden="true">05</span>
+              <span class="snm">Kimya</span>
+              <span class="scnt">3 alt sektör</span>
+            </div>
+          </li>
+          <li class="srow">
+            <div class="shd">
+              <span class="sno" aria-hidden="true">06</span>
+              <span class="snm">Mobilya</span>
+              <span class="scnt">3 alt sektör</span>
+            </div>
+          </li>
+        </ol>
+        <p class="snote reveal">Sektörünüz listede yok mu? Ön görüşmede birlikte bakalım.</p>
+      </section>
+
+      <!-- SÜREÇ -->
+      <section class="sec surec" id="surec">
+        <div class="wrap pgrid">
+          <div class="pintro reveal">
+            <h2>Görüşmeden imzaya, tüm süreci biz yönetiyoruz</h2>
+            <p class="ssub">
+              Rusya'ya geldiğinizde ne olacağını bilerek gelirsiniz: otel, restoran ve görüşme
+              takvimi hazırdır.
+            </p>
+            <a href="#iletisim" class="btn btn-p">Ücretsiz ön görüşme al</a>
+          </div>
+          <ol class="steps">
+            <li class="step reveal">
+              <span class="gno" aria-hidden="true">1</span>
+              <div><h3>İlk görüşme</h3><p>Sizi, ürününüzü ve hedefinizi tanırız.</p></div>
+            </li>
+            <li class="step reveal">
+              <span class="gno" aria-hidden="true">2</span>
+              <div><h3>Pazar araştırması</h3><p>Sektörünüz için Rusya pazarının fotoğrafını çekeriz.</p></div>
+            </li>
+            <li class="step reveal">
+              <span class="gno" aria-hidden="true">3</span>
+              <div><h3>Rakip analizi</h3><p>Pazardaki oyuncuları ve fiyat yapısını tararız.</p></div>
+            </li>
+            <li class="step reveal">
+              <span class="gno" aria-hidden="true">4</span>
+              <div><h3>Firma eşleştirme</h3><p>Doğrulanmış alıcılarla görüşmelerinizi ayarlarız.</p></div>
+            </li>
+            <li class="step reveal">
+              <span class="gno" aria-hidden="true">5</span>
+              <div><h3>Rusya'da organizasyon</h3><p>Otel, ulaşım ve görüşme takvimi hazır programınız.</p></div>
+            </li>
+          </ol>
+        </div>
+        <figure class="pband reveal">
+          <img
+            src="/images/surec-band.webp"
+            alt="Moskova'da iş toplantısı atmosferi (yer tutucu görsel)"
+            width="1440"
+            height="276"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </section>
+
+      <!-- PAKETLER -->
+      <section class="wrap sec" id="paket">
+        <div class="shead reveal">
+          <h2>İhtiyacınıza göre paketler</h2>
+          <p class="ssub">Sadece pazar analizinden, uçtan uca görüşme organizasyonuna kadar.</p>
+        </div>
+        <div class="pkgs reveal">
+          <article class="pkg">
+            <h3>Keşif</h3>
+            <p class="psum">Pazar analizi</p>
+            <ul>
+              <li>Sektör pazar raporu</li>
+              <li>Rakip &amp; kanal analizi</li>
+              <li>Giriş &amp; sertifika notları</li>
+            </ul>
+          </article>
+          <article class="pkg feat">
+            <p class="pbadge">En çok tercih edilen</p>
+            <h3>Büyüme</h3>
+            <p class="psum">Analiz + görüşme</p>
+            <ul>
+              <li>Keşif paketinin tümü</li>
+              <li>Potansiyel firma listesi</li>
+              <li>Görüşme organizasyonu</li>
+              <li>3 gün Rusya programı</li>
+            </ul>
+          </article>
+          <article class="pkg">
+            <h3>Kurumsal</h3>
+            <p class="psum">Uçtan uca</p>
+            <ul>
+              <li>Büyüme paketinin tümü</li>
+              <li>Çoklu şehir programı</li>
+              <li>Sürekli veri &amp; takip</li>
+            </ul>
+          </article>
+        </div>
+        <p class="pnote reveal">
+          Kapsam ve fiyat, sektörünüze ve hedef şehirlere göre ön görüşmede netleşir.
+        </p>
+      </section>
+
+      <!-- VERİ -->
+      <section class="sec veri" id="veri">
+        <div class="wrap">
+          <div class="shead reveal">
+            <p class="eyebrow">Pazar hafızası</p>
+            <h2>Elimizde biriken sektör verisi</h2>
+            <p class="ssub">
+              Her görüşmeden veri toplarız. Zamanla bu, alt sektör bazında canlı bir pazar
+              hafızasına dönüşür.
+            </p>
+          </div>
+          <div class="dgrid reveal">
+            <div class="dc">
+              <p class="dct">Gıda · pazar büyüklüğü</p>
+              <div class="dbars" aria-hidden="true">
+                <span data-h="40"></span><span data-h="64"></span><span data-h="52"></span><span
+                  data-h="82"></span><span data-h="70"></span>
+              </div>
+              <p class="dm">₽ 4,2 T</p>
+              <p class="dml">2026 · +9,4% <em>· detayı pakete dahil</em></p>
+            </div>
+            <div class="dc">
+              <p class="dct">Tekstil · ithalat payı</p>
+              <div class="dbars" aria-hidden="true">
+                <span data-h="55"></span><span data-h="45"></span><span data-h="76"></span><span
+                  data-h="60"></span><span data-h="90"></span>
+              </div>
+              <p class="dm">%18</p>
+              <p class="dml">Türkiye payı · 2026 <em>· detayı pakete dahil</em></p>
+            </div>
+            <div class="dc">
+              <p class="dct">Mobilya · büyüme</p>
+              <div class="dbars" aria-hidden="true">
+                <span data-h="70"></span><span data-h="50"></span><span data-h="85"></span><span
+                  data-h="42"></span><span data-h="66"></span>
+              </div>
+              <p class="dm">+11%</p>
+              <p class="dml">yıllık · 2026 <em>· detayı pakete dahil</em></p>
+            </div>
+          </div>
+          <div class="rapor reveal">
+            <p class="rcap">Bir raporun içinde</p>
+            <ol class="rlist">
+              <li><b>Pazar tablosu</b><span>Büyüklük, trend, segment</span></li>
+              <li><b>Rakip &amp; kanal</b><span>Tedarikçiler, alıcı tipleri</span></li>
+              <li><b>Firma listesi</b><span>Taranmış potansiyel alıcılar</span></li>
+              <li><b>Görüşme hazırlığı</b><span>MOQ, EAC, pazarlık notu</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- GÜVEN -->
+      <section class="wrap sec guven">
+        <ul class="badges reveal">
+          <li><b>EAC</b><span>sertifika sürecinde destek</span></li>
+          <li><b>Ticaret Odası</b><span>Rusya kurumlarıyla uyumlu çalışma</span></li>
+          <li><b>Yerel ekip</b><span>Rusya'da yerleşik, Rusça konuşan kadro</span></li>
+          <li><b>Doğrulanmış firmalar</b><span>Alıcılar yerinde teyit edilir</span></li>
+        </ul>
+      </section>
+
+      <!-- İLETİŞİM -->
+      <section class="sec iletisim" id="iletisim">
+        <div class="wrap cgrid">
+          <div class="ccopy reveal">
+            <h2>Rusya yolculuğunuzu bugün başlatın</h2>
+            <p class="ssub">
+              Formu doldurun; 24 saat içinde sektörünüze özel bir ön değerlendirmeyle dönelim.
+            </p>
+            <ol class="csteps">
+              <li><b>24 saatte dönüş</b><span>Talebinizi inceleyip sizi ararız.</span></li>
+              <li><b>Ön pazar analizi</b><span>Sektörünüz için ilk değerlendirme.</span></li>
+              <li><b>Görüşme planı</b><span>Rusya programınızı birlikte kurarız.</span></li>
+            </ol>
+          </div>
+          <form
+            class="cform reveal"
+            name="on-gorusme"
+            method="POST"
+            action="/tesekkurler/"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="on-gorusme" />
+            <p class="hp" aria-hidden="true">
+              <label>Bu alanı boş bırakın: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            </p>
+            <div class="frow">
+              <div class="fg">
+                <label for="f-ad">Ad Soyad</label>
+                <input id="f-ad" name="ad-soyad" type="text" placeholder="Adınız" required autocomplete="name" />
+              </div>
+              <div class="fg">
+                <label for="f-firma">Firma</label>
+                <input id="f-firma" name="firma" type="text" placeholder="Firma adı" autocomplete="organization" />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="f-sektor">Sektör</label>
+              <select id="f-sektor" name="sektor" required>
+                <option value="" disabled selected>Sektörünüzü seçin</option>
+                <option>Gıda</option>
+                <option>Tekstil &amp; Hazır Giyim</option>
+                <option>İnşaat &amp; Yapı</option>
+                <option>Makine &amp; Metal</option>
+                <option>Kimya</option>
+                <option>Mobilya</option>
+              </select>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label for="f-tel">Telefon</label>
+                <input id="f-tel" name="telefon" type="tel" placeholder="+90" autocomplete="tel" />
+              </div>
+              <div class="fg">
+                <label for="f-eposta">E-posta</label>
+                <input id="f-eposta" name="eposta" type="email" placeholder="ornek@firma.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="f-mesaj">Mesajınız</label>
+              <textarea
+                id="f-mesaj"
+                name="mesaj"
+                placeholder="Rusya'da hedeflediğiniz ürün ve pazar hakkında kısa not"></textarea>
+            </div>
+            <button type="submit" class="btn btn-p btn-l">Ücretsiz ön görüşme al</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap fgrid">
+        <div class="fcol">
+          <h4>Hizmet</h4>
+          <a href="#sektor">Sektörler</a><a href="#surec">Süreç</a><a href="#paket">Paketler</a><a
+            href="#veri">Veri raporları</a>
+        </div>
+        <div class="fcol">
+          <h4>Kurumsal</h4>
+          <a href="#">Hakkımızda</a><a href="#">Rusya ekibi</a><a href="#iletisim">İletişim</a>
+        </div>
+        <div class="fcol">
+          <h4>Kaynaklar</h4>
+          <a href="#">Blog</a><a href="#">Rehberler</a><a href="#">SSS</a>
+        </div>
+        <div class="fcol">
+          <h4>Dil</h4>
+          <a href="#">Türkçe</a><a href="#" lang="ru">Русский</a>
+        </div>
+      </div>
+      <div class="wrap fbar">
+        <span>© 2026 RUSYA2B2</span><span>Gizlilik · Kullanım Şartları</span>
+      </div>
+    </footer>
+
+    <style is:global>
+      /* ===== Konsept B design token'ları ===== */
+      :root {
+        --ink: #101418;
+        --ink-2: #151a20;
+        --ink-3: #1b212a;
+        --bone: #ede8df;
+        --bone-hi: #f7f4ee;
+        --mut: #a3aab2;
+        --amber: #d6a24e;
+        --amber-deep: #b9852f;
+        --line: rgba(237, 232, 223, 0.14);
+        --line-soft: rgba(237, 232, 223, 0.08);
+        --disp: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+        --body: 'Inter', system-ui, sans-serif;
+        --wrap: 1200px;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body {
+        background: var(--ink);
+        color: var(--bone);
+        font: 400 16px/1.65 var(--body);
+        -webkit-font-smoothing: antialiased;
+      }
+      img { max-width: 100%; display: block; }
+      a { color: inherit; text-decoration: none; }
+      .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+      h1, h2, h3 { font-family: var(--disp); font-weight: 560; letter-spacing: -0.02em; }
+      .skip {
+        position: absolute; left: -9999px; top: 0; z-index: 99;
+        background: var(--amber); color: var(--ink); padding: 10px 16px;
+      }
+      .skip:focus { left: 8px; top: 8px; }
+
+      /* butonlar — köşeler keskin, tek vurgu rengi */
+      .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        font: 600 15px/1 var(--body); padding: 14px 22px;
+        border: 1px solid var(--amber); color: var(--ink);
+        background: var(--amber); transition: background 0.15s, transform 0.1s;
+        white-space: nowrap;
+      }
+      .btn:hover { background: var(--amber-deep); border-color: var(--amber-deep); }
+      .btn:active { transform: translateY(1px); }
+      .btn-l { padding: 16px 28px; font-size: 16px; }
+      .tlink {
+        font: 500 15px/1 var(--body); color: var(--bone);
+        border-bottom: 1px solid var(--amber); padding-bottom: 3px;
+      }
+      .tlink:hover { color: var(--amber); }
+
+      /* nav */
+      header {
+        position: sticky; top: 0; z-index: 50;
+        background: rgba(16, 20, 24, 0.92); backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line-soft);
+      }
+      .nav { display: flex; align-items: center; gap: 28px; height: 68px; }
+      .logo { font: 700 19px/1 var(--disp); letter-spacing: 0.02em; }
+      .logo b { color: var(--amber); }
+      .links { display: flex; gap: 22px; }
+      .links a { font: 500 14px/1 var(--body); color: var(--mut); }
+      .links a:hover { color: var(--bone-hi); }
+      .sp { flex: 1; }
+      .lang { font: 500 12px/1 var(--body); color: var(--mut); letter-spacing: 0.08em; }
+      header .btn { padding: 10px 16px; font-size: 14px; }
+
+      /* hero */
+      .hero { border-bottom: 1px solid var(--line); }
+      .hgrid {
+        display: grid; grid-template-columns: 7fr 5fr; gap: 56px;
+        align-items: center; padding-top: 72px; padding-bottom: 64px;
+      }
+      .route { font: 500 13px/1 var(--body); color: var(--amber); letter-spacing: 0.14em; text-transform: uppercase; }
+      .route span { letter-spacing: 0; }
+      h1 {
+        font-size: clamp(38px, 5.2vw, 66px); line-height: 1.04;
+        margin: 18px 0 20px; color: var(--bone-hi); text-wrap: balance;
+      }
+      .lead { font-size: 18px; color: var(--mut); max-width: 54ch; }
+      .cta-row { display: flex; align-items: center; gap: 24px; margin-top: 32px; flex-wrap: wrap; }
+      .hmedia { position: relative; }
+      .hmedia img {
+        width: 100%; height: auto; aspect-ratio: 4/3.4; object-fit: cover;
+        filter: grayscale(0.9) contrast(1.05) brightness(0.55);
+        border: 1px solid var(--line);
+      }
+      .hmedia figcaption {
+        position: absolute; left: 0; bottom: 0;
+        font: 500 12px/1 var(--body); letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--bone-hi); background: rgba(16, 20, 24, 0.85);
+        padding: 10px 14px; border-top: 2px solid var(--amber);
+      }
+      .hstats {
+        display: grid; grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--line);
+        padding-top: 28px; padding-bottom: 40px; gap: 24px;
+      }
+      .hstats .n { font: 560 34px/1.1 var(--disp); color: var(--amber); display: block; }
+      .hstats .l { font-size: 13.5px; color: var(--mut); display: block; margin-top: 6px; }
+
+      /* referans şeridi */
+      .band { border-bottom: 1px solid var(--line); background: var(--ink-2); }
+      .trust { padding-top: 28px; padding-bottom: 28px; display: flex; align-items: center; gap: 36px; }
+      .cap { font-size: 13.5px; color: var(--mut); max-width: 26ch; flex-shrink: 0; }
+      .logos { display: flex; gap: 16px; list-style: none; flex-wrap: wrap; flex: 1; justify-content: space-between; }
+      .logos img {
+        width: 118px; height: 46px; object-fit: cover;
+        filter: grayscale(1) invert(0.9) contrast(0.6); opacity: 0.55;
+      }
+
+      /* bölüm başlıkları */
+      .sec { padding-top: 88px; padding-bottom: 88px; }
+      .shead h2, .pintro h2, .ccopy h2 {
+        font-size: clamp(28px, 3.4vw, 42px); line-height: 1.12;
+        color: var(--bone-hi); max-width: 24ch; text-wrap: balance;
+      }
+      .ssub { color: var(--mut); margin-top: 14px; max-width: 58ch; }
+      .shead { margin-bottom: 48px; }
+      .eyebrow {
+        font: 600 12px/1 var(--body); letter-spacing: 0.16em; text-transform: uppercase;
+        color: var(--amber); margin-bottom: 14px;
+      }
+
+      /* sektör endeksi */
+      .sindex { list-style: none; border-top: 1px solid var(--line); }
+      .srow { border-bottom: 1px solid var(--line); }
+      .shd { display: flex; align-items: baseline; gap: 24px; padding: 22px 4px; }
+      .sno { font: 560 15px/1 var(--disp); color: var(--amber); min-width: 34px; }
+      .snm { font: 560 clamp(20px, 2.4vw, 28px)/1.2 var(--disp); color: var(--bone-hi); }
+      .scnt { margin-left: auto; font-size: 13px; color: var(--mut); white-space: nowrap; }
+      .srow:not(.open) .shd:hover { background: var(--ink-2); cursor: default; }
+      .srow:not(.open) .shd:hover .snm { color: var(--amber); }
+      .subs {
+        list-style: none; display: grid; grid-template-columns: repeat(3, 1fr);
+        gap: 1px; background: var(--line-soft); border-top: 1px solid var(--line-soft);
+        margin: 0 0 0 58px; padding: 0 0 0 0; margin-bottom: 26px;
+      }
+      .subs li { background: var(--ink-2); padding: 16px 18px; }
+      .subs b { display: block; font: 600 15px/1.3 var(--body); color: var(--bone-hi); }
+      .subs span { font-size: 13px; color: var(--mut); }
+      .snote { margin-top: 20px; font-size: 14px; color: var(--mut); }
+
+      /* süreç */
+      .surec { background: var(--ink-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding-bottom: 0; }
+      .pgrid { display: grid; grid-template-columns: 5fr 7fr; gap: 72px; padding-bottom: 88px; }
+      .pintro { position: sticky; top: 108px; align-self: start; }
+      .pintro .btn { margin-top: 28px; }
+      .steps { list-style: none; border-top: 1px solid var(--line); }
+      .step {
+        display: flex; gap: 28px; align-items: baseline;
+        padding: 26px 4px; border-bottom: 1px solid var(--line);
+      }
+      .gno { font: 560 44px/1 var(--disp); color: transparent; -webkit-text-stroke: 1px var(--amber); min-width: 56px; }
+      .step h3 { font-size: 20px; color: var(--bone-hi); }
+      .step p { color: var(--mut); font-size: 15px; margin-top: 4px; }
+      .pband img {
+        width: 100%; height: 220px; object-fit: cover;
+        filter: grayscale(0.9) contrast(1.05) brightness(0.4);
+        border-top: 1px solid var(--line);
+      }
+
+      /* paketler */
+      .pkgs { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); }
+      .pkg { padding: 32px 28px 36px; border-right: 1px solid var(--line); position: relative; }
+      .pkg:last-child { border-right: 0; }
+      .pkg h3 { font-size: 24px; color: var(--bone-hi); }
+      .psum { color: var(--amber); font: 500 14px/1.4 var(--body); margin: 6px 0 22px; }
+      .pkg ul { list-style: none; border-top: 1px solid var(--line-soft); }
+      .pkg li { padding: 12px 0 12px 22px; border-bottom: 1px solid var(--line-soft); font-size: 14.5px; color: var(--bone); position: relative; }
+      .pkg li::before { content: '—'; position: absolute; left: 0; color: var(--amber); }
+      .pkg.feat { background: var(--ink-3); border-top: 3px solid var(--amber); margin-top: -3px; }
+      .pbadge {
+        font: 600 11px/1 var(--body); letter-spacing: 0.12em; text-transform: uppercase;
+        color: var(--amber); margin-bottom: 14px;
+      }
+      .pnote { margin-top: 20px; font-size: 14px; color: var(--mut); }
+
+      /* veri */
+      .veri { background: var(--ink-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .dgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      .dc { border: 1px solid var(--line); padding: 24px; background: var(--ink); }
+      .dct { font: 600 13px/1.4 var(--body); color: var(--mut); letter-spacing: 0.04em; }
+      .dbars { display: flex; align-items: flex-end; gap: 8px; height: 88px; margin: 20px 0 18px; }
+      .dbars span { flex: 1; background: var(--ink-3); border-top: 2px solid var(--amber); height: 0; transition: height 0.9s cubic-bezier(0.2, 0.7, 0.2, 1); }
+      .dm { font: 560 32px/1 var(--disp); color: var(--bone-hi); }
+      .dml { font-size: 13px; color: var(--mut); margin-top: 6px; }
+      .dml em { font-style: normal; color: var(--amber); }
+      .rapor { margin-top: 56px; }
+      .rcap { font: 600 13px/1 var(--body); color: var(--bone-hi); letter-spacing: 0.04em; margin-bottom: 18px; }
+      .rlist { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); counter-reset: r; border-left: 1px solid var(--line); }
+      .rlist li { counter-increment: r; padding: 4px 22px 4px 20px; border-right: 1px solid var(--line); }
+      .rlist li::before { content: counter(r, decimal-leading-zero); font: 560 14px/1 var(--disp); color: var(--amber); display: block; margin-bottom: 10px; }
+      .rlist b { display: block; font: 600 15px/1.35 var(--body); color: var(--bone-hi); }
+      .rlist span { font-size: 13px; color: var(--mut); }
+
+      /* güven */
+      .guven { padding-top: 56px; padding-bottom: 56px; }
+      .badges { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+      .badges li { border-top: 2px solid var(--amber); padding-top: 14px; }
+      .badges b { display: block; font: 560 17px/1.3 var(--disp); color: var(--bone-hi); }
+      .badges span { font-size: 13.5px; color: var(--mut); }
+
+      /* iletişim */
+      .iletisim { background: var(--ink-2); border-top: 1px solid var(--line); }
+      .cgrid { display: grid; grid-template-columns: 5fr 7fr; gap: 72px; align-items: start; }
+      .csteps { list-style: none; margin-top: 36px; counter-reset: c; border-top: 1px solid var(--line); }
+      .csteps li { counter-increment: c; display: flex; gap: 18px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--line); }
+      .csteps li::before { content: counter(c); font: 560 18px/1 var(--disp); color: var(--amber); }
+      .csteps b { font: 600 15px/1.4 var(--body); color: var(--bone-hi); display: block; }
+      .csteps span { font-size: 14px; color: var(--mut); }
+      .cform { background: var(--ink); border: 1px solid var(--line); padding: 32px; }
+      .hp { position: absolute; left: -9999px; }
+      .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+      .fg { margin-bottom: 18px; }
+      .fg label { display: block; font: 600 13px/1 var(--body); color: var(--bone-hi); margin-bottom: 8px; }
+      .fg input, .fg select, .fg textarea {
+        width: 100%; background: var(--ink-2); border: 1px solid var(--line);
+        color: var(--bone-hi); font: 400 15px/1.4 var(--body); padding: 12px 14px;
+        border-radius: 0; appearance: none;
+      }
+      .fg select { background-image: linear-gradient(45deg, transparent 50%, var(--mut) 50%), linear-gradient(135deg, var(--mut) 50%, transparent 50%); background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%; background-size: 5px 5px; background-repeat: no-repeat; }
+      .fg ::placeholder { color: #7e858e; }
+      .fg textarea { min-height: 96px; resize: vertical; }
+      .fg input:focus, .fg select:focus, .fg textarea:focus {
+        outline: 2px solid var(--amber); outline-offset: -1px; border-color: var(--amber);
+      }
+      .cform .btn { width: 100%; justify-content: center; margin-top: 6px; }
+
+      /* footer */
+      footer { border-top: 1px solid var(--line); background: var(--ink); }
+      .fgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding-top: 48px; padding-bottom: 32px; }
+      .fcol h4 { font: 600 13px/1 var(--body); color: var(--bone-hi); letter-spacing: 0.06em; margin-bottom: 14px; }
+      .fcol a { display: block; font-size: 14px; color: var(--mut); padding: 5px 0; }
+      .fcol a:hover { color: var(--amber); }
+      .fbar { display: flex; justify-content: space-between; border-top: 1px solid var(--line-soft); padding-top: 18px; padding-bottom: 22px; font-size: 13px; color: var(--mut); }
+
+      /* reveal animasyonu — anlatım amaçlı, reduced-motion'da kapalı */
+      .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
+      .reveal.in { opacity: 1; transform: none; }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; transition: none !important; }
+        .reveal { opacity: 1; transform: none; }
+        .dbars span { transition: none; }
+        html { scroll-behavior: auto; }
+      }
+
+      /* mobil */
+      @media (max-width: 960px) {
+        .links, .lang { display: none; }
+        .hgrid, .pgrid, .cgrid { grid-template-columns: 1fr; gap: 40px; }
+        .pintro { position: static; }
+        .hstats { grid-template-columns: repeat(2, 1fr); }
+        .subs { grid-template-columns: 1fr 1fr; margin-left: 0; }
+        .pkgs { grid-template-columns: 1fr; }
+        .pkg { border-right: 0; border-bottom: 1px solid var(--line); }
+        .pkg:last-child { border-bottom: 0; }
+        .pkg.feat { border-top: 3px solid var(--amber); margin-top: 0; }
+        .dgrid { grid-template-columns: 1fr; }
+        .rlist { grid-template-columns: 1fr 1fr; border-left: 0; }
+        .rlist li { border-left: 1px solid var(--line); margin-bottom: 20px; }
+        .badges { grid-template-columns: 1fr 1fr; }
+        .fgrid { grid-template-columns: 1fr 1fr; }
+        .trust { flex-direction: column; align-items: flex-start; gap: 18px; }
+        .logos { justify-content: flex-start; }
+      }
+      @media (max-width: 560px) {
+        .subs { grid-template-columns: 1fr; }
+        .frow { grid-template-columns: 1fr; gap: 0; }
+        .fbar { flex-direction: column; gap: 6px; }
+        .scnt { display: none; }
+      }
+    </style>
+
+    <script>
+      // scroll reveal + veri barları; prefers-reduced-motion'da devre dışı
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const bars = (scope: Element | Document) =>
+        scope.querySelectorAll<HTMLElement>('[data-h]').forEach((b) => (b.style.height = b.dataset.h + '%'));
+      if (reduced) {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
+        bars(document);
+      } else {
+        const io = new IntersectionObserver(
+          (es) =>
+            es.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('in');
+                bars(e.target);
+                io.unobserve(e.target);
+              }
+            }),
+          { threshold: 0.15 }
+        );
+        document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+      }
+    </script>
+  </body>
+</html>

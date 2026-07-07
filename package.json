@@ -10,6 +10,7 @@
     "placeholders": "node scripts/make-placeholders.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.2.10",
     "@fontsource/inter": "^5.2.8",
     "@fontsource/sora": "^5.2.8",
     "astro": "^5.12.0"
