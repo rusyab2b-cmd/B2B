@@ -1,10 +1,9 @@
 ---
 // Fontlar self-hosted (@fontsource) — display=swap varsayılan, dış CDN yok.
-import '@fontsource/sora/400.css';
-import '@fontsource/sora/500.css';
-import '@fontsource/sora/600.css';
+import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
 import '../styles/global.css';
 
 interface Props {
@@ -28,10 +27,12 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <noscript>
       <style>
-        .reveal,
-        .stagger > * {
+        .reveal {
           opacity: 1;
           transform: none;
+        }
+        .dbars span {
+          height: 60% !important;
         }
       </style>
     </noscript>

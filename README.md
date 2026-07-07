@@ -3,7 +3,11 @@
 Türkiye'den Rusya'ya B2B danışmanlık markası **RUSYA2B2** için tek sayfalık tanıtım sitesi.
 [Astro](https://astro.build) ile kurulmuştur; Netlify'a statik olarak deploy edilir.
 
-> Marka sabitleri (değişmez): İsim **RUSYA2B2** · Birincil renk **#1E5FA6** · Birincil eylem **"Ücretsiz ön görüşme"**.
+> Marka sabitleri (değişmez): İsim **RUSYA2B2** · Birincil eylem **"Ücretsiz ön görüşme"**.
+>
+> Onaylı tasarım dili: **"Mürekkep & Kehribar"** — koyu mürekkep zemin (`#101418`),
+> tek vurgu rengi kehribar (`#D6A24E`), keskin köşeler, hairline çizgiler,
+> editoryal/premium danışmanlık estetiği.
 
 ## Nasıl çalıştırırım?
 
@@ -51,34 +55,36 @@ Spam koruması: gizli honeypot alanı (`bot-field`) hazırdır; Netlify bunu oto
 Tüm görseller `/public/images` altında **yer tutucu** WebP dosyalarıdır.
 Gerçek görselleri aynı ad ve orana sahip WebP dosyalarıyla üzerine yazmanız yeterli — kod değişikliği gerekmez:
 
-| Dosya | Boyut (px) | İçerik (brief §6) |
+| Dosya | Boyut (px) | İçerik |
 |---|---|---|
-| `hero.webp` | 960×816 (4:3.4) | Türk ürünü + Rus alıcı iş görüşmesi / tokalaşma (yatay, sıcak, insanlı) |
+| `hero.webp` | 960×816 (4:3.4) | Türk ürünü + Rus alıcı iş görüşmesi / tokalaşma (yatay, insanlı) |
 | `surec-band.webp` | 1440×276 (6:1.15) | Moskova / toplantı / otel lobisi — atmosferik bant |
-| `iletisim-siluet.webp` | 1440×900 | Şehir silüeti (CSS %14 opaklıkla basar, düz görsel koyun) |
 | `logo-1..3.webp` | 264×104 | Çalışılan firma logoları |
 | `logo-ticaret-odasi.webp` | 264×104 | Ticaret Odası rozeti |
 | `logo-eac.webp` | 264×104 | EAC sertifika rozeti |
 
+Fotoğraflar CSS ile hafif siyah-beyaza çekilip koyulaştırılır (duotone/premium görünüm);
+renkli fotoğraf koymanız sorun değil, filtre otomatik uygulanır.
 Yer tutucuları yeniden üretmek isterseniz: `npm run placeholders`
 
-Tüm görseller lazy-load'dur (hero hariç — ekran üstü olduğu için `loading="eager"` + `fetchpriority="high"`).
+Hero görseli ekran üstü olduğu için `loading="eager"` + `fetchpriority="high"`, kalanlar lazy-load'dur.
 
 ## Proje yapısı
 
 ```
 src/
 ├── styles/global.css        # design token'lar (CSS değişkenleri) + tüm stiller
-├── scripts/animations.js    # count-up, scroll reveal, stagger, bar büyümesi
-├── layouts/BaseLayout.astro  # fontlar (Sora + Inter), meta, skip-link
+├── scripts/animations.js    # scroll reveal + veri barı büyümesi
+├── layouts/BaseLayout.astro  # fontlar (Bricolage Grotesque + Inter), meta, skip-link
 ├── components/               # bölüm sırasıyla:
 │   ├── Nav.astro
-│   ├── Hero.astro
-│   ├── Trust.astro
-│   ├── Sektor.astro
-│   ├── Surec.astro
-│   ├── Paket.astro
-│   ├── Veri.astro
+│   ├── Hero.astro            # asimetrik hero + 4'lü istatistik şeridi
+│   ├── Trust.astro           # referans logo bandı
+│   ├── Sektor.astro          # numaralı sektör endeksi (01–06)
+│   ├── Surec.astro           # yapışkan başlık + 5 adım
+│   ├── Paket.astro           # 3 sütunlu paket karşılaştırması
+│   ├── Veri.astro            # sektör verisi kartları + rapor içeriği
+│   ├── Guven.astro           # EAC / Ticaret Odası / yerel ekip rozetleri
 │   ├── Iletisim.astro        # Netlify Forms
 │   └── Footer.astro
 └── pages/
@@ -88,10 +94,13 @@ src/
 
 ## Tasarım kuralları (özet)
 
-Ayrıntı için `RUSYA2B2-tasarim-brief.md` kaynağına bakın. Kısaca:
-
 - Tek uzun sayfa, tek CTA: **"Ücretsiz ön görüşme"**. Self-servis SaaS CTA'sı, yıldız puanı, carousel **yok**.
-- Renk: mavi ailesi + nötr; beyazdan koyu laciverte tek dikey gradient. İkiden fazla vurgu rengi **yok**.
-- Tipografi: başlıklar **Sora**, gövde **Inter** — self-hosted (`@fontsource`, `display=swap`); ikonlar Tabler'dan derlemede gömülür, çalışma anında dış CDN yoktur.
-- Animasyonlar anlatım içindir; `prefers-reduced-motion` durumunda tümü kapanır.
-- Sektör/veri filtreleri v1'de görsel/statiktir; gerçek filtreleme 2. faz işidir.
+- Tek tema: koyu mürekkep — bölümler tema değiştirmez, sadece aynı aile içinde ton değişir
+  (`--ink` / `--ink-2` / `--ink-3`).
+- Tek vurgu rengi: kehribar `#D6A24E`. İkinci vurgu rengi **yok**.
+- Köşeler keskin (radius 0), ayrımlar hairline çizgilerle (`--line`), kart gölgesi yok.
+- Tipografi: başlıklar **Bricolage Grotesque**, gövde **Inter** — self-hosted
+  (`@fontsource`, `display=swap`); çalışma anında dış CDN yoktur.
+- Animasyonlar anlatım içindir (scroll reveal + bar büyümesi); `prefers-reduced-motion`
+  durumunda tümü kapanır, JavaScript kapalıysa içerik yine tam görünür.
+- Sektör endeksi ve veri filtreleri v1'de görsel/statiktir; gerçek filtreleme 2. faz işidir.
